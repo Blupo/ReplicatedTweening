@@ -4,6 +4,10 @@ Based on [Steadyon's TweenServiceV2](https://github.com/Steadyon/TweenServiceV2)
 
 Also available as a [library asset](https://www.roblox.com/library/4471346909/ReplicatedTweening).
 
+# Install
+
+The module should be accessible to both the server and client, preferably in ReplicatedStorage, and needs to be `require`d by both as well. On the server, `require`ing the module will return ReplicatedTweening which is used to make the tweens. On the client, `require`ing the module will simply initialise everything to play tweens on the client.
+
 # ReplicatedTweening
 This is what is returned when you `require` the module.
 
