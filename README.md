@@ -8,13 +8,15 @@ Also available as a [library asset](https://www.roblox.com/library/4471346909/Re
 
 The module should be accessible to both the server and client, preferably in ReplicatedStorage, and needs to be `require`d by both as well. On the server, `require`ing the module will return ReplicatedTweening which is used to make the tweens. On the client, `require`ing the module will simply initialise everything to play tweens on the client.
 
+ReplicatedTweens function similarly to normal Tweens to minimize any transitions between the two.
+
 # ReplicatedTweening
 This is what is returned when you `require` the module.
 
 - `ReplicatedTween ReplicatedTweening.new(Instance object, TweenInfo tweenInfo, table propertyTable)`
     - The parameters are the same as [TweenService/Create](https://developer.roblox.com/en-us/api-reference/function/TweenService/Create), returns a `ReplicatedTween` (see section ReplicatedTween)
 - `ReplicatedTween ReplicatedTweening:Create(Instance object, TweenInfo tweenInfo, table propertyTable)`
-    - Same as `ReplicatedTweening.new`
+    - Same as `ReplicatedTweening.new`, added to minimize transitioning with scripts using normal TweenService/Create
 
 # ReplicatedTween
 
