@@ -2,6 +2,8 @@ ReplicatedTweening should be used when you want to use server code on a tween wi
 
 Based on [Steadyon's TweenServiceV2](https://github.com/Steadyon/TweenServiceV2).
 
+Also available as a [library asset](https://www.roblox.com/library/4471346909/ReplicatedTweening).
+
 # ReplicatedTweening
 This is what is returned when you `require` the module.
 
